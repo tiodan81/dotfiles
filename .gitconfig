@@ -1,0 +1,18 @@
+[core]
+	editor = code --wait
+	excludesfile = /Users/danschwartz/.gitignore_global
+[user]
+	email = schwartz@substantial.com
+	name = Dan Schwartz
+[alias]
+	co = checkout
+	c = commit -m
+	b = branch
+	st = status
+	ph = push origin
+	pl = pull --ff-only origin
+	df = diff
+	log	= log --oneline
+	stable = reset --hard origin/master
+[url "ssh://git@git.sourceai.io/source/"]
+	insteadOf = https://git.sourceai.io/source/
