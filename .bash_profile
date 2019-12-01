@@ -4,8 +4,8 @@ fi
 
 alias gs='git status '
 alias ga='git add '
-alias gc='git commit'
-alias gcm='git commit -m'
+alias gcm='git commit'
+alias gc='git commit -m'
 alias gb='git branch '
 alias gd='git diff'
 alias glog='git log --oneline'
