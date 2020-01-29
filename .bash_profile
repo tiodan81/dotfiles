@@ -2,7 +2,7 @@ if [ -s ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-alias gs='git status '
+alias gs='git status'
 alias ga='git add '
 alias gcm='git commit'
 alias gc='git commit -m'
@@ -15,6 +15,7 @@ alias gum='git co master; git pl master'
 alias gmm='git merge origin/master'
 alias gsr='git reset HEAD^'
 alias ghard='git reset --hard'
+alias gnb='git checkout -b'
 
 alias npml='npm list --depth=0'
 alias npmlg='npm list -g --depth=0'
@@ -46,9 +47,11 @@ alias rc='bin/rails c'
 
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 
+[[ -r "/usr/local/etc/profile.d/bash_completion.sh" ]] && . "/usr/local/etc/profile.d/bash_completion.sh"
 
 export GOPATH="${HOME}/go"
 export PATH=${PATH}:"${GOPATH}"/bin
 
 . /Users/danschwartz/.asdf/completions/asdf.bash
 . /Users/danschwartz/.asdf/asdf.sh
+export PATH="/usr/local/opt/postgresql@10/bin:$PATH"
