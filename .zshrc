@@ -67,6 +67,9 @@ POWERLEVEL9K_HIDE_BRANCH_ICON=true
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
 
+unsetopt inc_append_history
+unsetopt share_history
+
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
@@ -108,6 +111,7 @@ alias gc='git commit -m'
 alias gum='gcm; git pull --ff-only origin master'
 alias gpox='ggp'
 alias gamend='git commit --amend'
+alias gsr='git reset HEAD^'
 
 eval "$(direnv hook zsh)"
 
