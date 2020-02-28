@@ -12,18 +12,13 @@
   },
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
-  "gitlens.codeLens.scopes": [
-    "document"
-  ],
+  "gitlens.codeLens.scopes": ["document"],
   "window.zoomLevel": 0,
   "files.associations": {
     "*.css": "postcss"
   },
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "prettier.disableLanguages": [
-    "html",
-    "yaml"
-  ],
+  "prettier.disableLanguages": ["html", "yaml", "markdown"],
   "gitlens.views.fileHistory.enabled": true,
   "gitlens.views.lineHistory.enabled": true,
   "breadcrumbs.enabled": true,
@@ -33,5 +28,7 @@
   "workbench.startupEditor": "newUntitledFile",
   "editor.accessibilitySupport": "off",
   "workbench.editor.enablePreview": false,
-  "workbench.editor.enablePreviewFromQuickOpen": false
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "editor.renderWhitespace": "none",
+  "editor.renderControlCharacters": false
 }
