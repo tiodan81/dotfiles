@@ -113,6 +113,12 @@ alias gpox='ggp'
 alias gamend='git commit --amend'
 alias gsr='git reset HEAD^'
 
+grc() {
+  git rebase -p --onto "$1"^ "$1"
+}
+
+alias rc='bin/rails c'
+
 eval "$(direnv hook zsh)"
 
 PATH=$HOME/.subscript/bin:$PATH
@@ -122,6 +128,9 @@ PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
 [[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
 export GOPATH="${HOME}/go"
 export PATH=${PATH}:"${GOPATH}"/bin
+export PATH="/usr/local/opt/postgresql@11/bin:$PATH"
+export PATH="/usr/local/opt/openssl@1.1/bin:$PATH"
+export PATH="/Users/danschwartz/.gem/ruby/2.7.0/bin:$PATH"
 
 . /Users/danschwartz/.asdf/completions/asdf.bash
 . /Users/danschwartz/.asdf/asdf.sh
