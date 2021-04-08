@@ -7,9 +7,6 @@
   "editor.minimap.enabled": false,
   "editor.scrollBeyondLastLine": false,
   "files.insertFinalNewline": true,
-  "gitlens.advanced.messages": {
-    "suppressShowKeyBindingsNotice": true
-  },
   "gitlens.currentLine.enabled": false,
   "gitlens.hovers.currentLine.over": "line",
   "gitlens.codeLens.scopes": ["document"],
@@ -18,9 +15,6 @@
     "*.css": "postcss"
   },
   "typescript.updateImportsOnFileMove.enabled": "never",
-  "prettier.disableLanguages": ["html", "yaml", "markdown"],
-  "gitlens.views.fileHistory.enabled": true,
-  "gitlens.views.lineHistory.enabled": true,
   "breadcrumbs.enabled": true,
   "editor.formatOnSave": true,
   "eslint.alwaysShowStatus": true,
@@ -35,6 +29,7 @@
   "ruby.lint": {
     "rubocop": true
   },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -43,5 +38,12 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "[json]": {
+    "editor.defaultFormatter": null
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": null
+  },
+  "diffEditor.ignoreTrimWhitespace": false
 }

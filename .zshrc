@@ -112,10 +112,17 @@ alias gum='gcm; git pull --ff-only origin master'
 alias gpox='ggp'
 alias gamend='git commit --amend'
 alias gsr='git reset HEAD^'
+alias gfixup='git commit --fixup'
+alias gresquash='git rebase -i --autosquash'
 
 grc() {
   git rebase -p --onto "$1"^ "$1"
 }
+
+janedeploydiff() {
+  git log --no-merges --topo-order --pretty="format:%h %<(20,trunc)%an %s" origin/production.."$1"
+}
+alias janeprodconsole='heroku run rails console --sandbox -a jane-production'
 
 alias rc='bin/rails c'
 
